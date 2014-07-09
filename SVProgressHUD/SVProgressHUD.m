@@ -456,7 +456,7 @@ CGFloat SVProgressHUDRingThickness = 6;
         
         for (UIWindow *window in frontToBackWindows)
         {
-            //if (window.windowLevel == self.windowLevel)
+            if (window.windowLevel <= self.windowLevel)
             {
                 [window addSubview:self.overlayView];
                 break;
